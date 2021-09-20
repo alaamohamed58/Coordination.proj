@@ -359,6 +359,13 @@ header .container nav ul li.about ul li:hover{
         display: none;
     }
 }
+@media(max-width:576px){
+a[type = "phone"]{
+    margin-right: 2px !important;
+    font-size: 5px;
+    text-align: center;
+}
+}
 /*start landing*/
 .landing{
     position: relative;
@@ -550,6 +557,11 @@ color: #777;
 .specilization .box .content .text p{
     line-height: 1.5;
 }
+@media(max-width:576px){
+    .specilization ul li{
+        padding: 0px !important;
+    }
+    }
 /*start our team*/
 .team{
     padding: 100px 0 ;
