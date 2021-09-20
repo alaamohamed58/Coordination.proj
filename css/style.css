@@ -290,12 +290,11 @@ header .container nav ul li.about ul li:hover{
 @media(max-width:770px){
     header .container nav ul:not(li.about ul){
         position: absolute;
-        flex-direction: column;
+        display: block;
         top: 100%;
         background-color: var(--main-color);
         width: 100%;
         right: 0;
-        align-items: flex-start;
         transform: scaleY(0);
         transition: var(--transition);
         transform-origin: left top;
