@@ -18,10 +18,10 @@ body.unscrollable {
     overflow: hidden;
 }
 html{
-    scroll-behavior: smooth;
     -moz-scroll-behavior: smooth;
     -o-scroll-behavior: smooth;
     -webkit-scroll-behavior : smooth;
+     scroll-behavior: smooth;
 }
 *{
     padding: 0;
@@ -126,6 +126,9 @@ header .container{
     background-color: rgba(0,0,0,0.80);;
 }
 header .container select{
+    -o-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
     border-radius: 14px;
     font-size: 12px;
     order: 1;
