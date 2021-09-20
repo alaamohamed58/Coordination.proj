@@ -31,6 +31,7 @@ html{
     -moz-user-select: none;
     -o-user-select: none;
     -webkit-user-select: none;
+     user-select: none;
 }
 a, button{
     cursor: pointer;
@@ -47,31 +48,45 @@ input, textarea{
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    -o-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     margin: 0;
 }
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+    -o-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
 }
+
+/*Extra small*/
+@media (min-width:576px){
+    .container{
+        width: 540px;
+    }
+    }
 
 /*small screens*/
 @media (min-width:768px){
 .container{
-    width: 750px;
+    width: 720px;
 }
 }
 /*medium screens*/
 @media (min-width: 992px){
     .container{
-        width: 970px;
+        width: 960px;
     }
 }
 /*large screens*/
 @media (min-width: 1200px){
     .container{
-        width: 1170px;
+        width: 1140px;
     }
 }
+
 
 ul{
     list-style: none;
