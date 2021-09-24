@@ -147,6 +147,7 @@ header .container select{
     border-radius: 14px;
     font-size: 12px;
     order: 1;
+    padding: 5px;
 }
 header .container::before,
 header .container::after{
@@ -622,14 +623,14 @@ text-align: center;
 }
 .partners h2{
     text-align: center;
-    margin:20px 0 ;
+    margin:50px 0 ;
 }
 .partners h2 i{
     color: var(--secondary-color);
 }
 .partners .box{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 .partners .box img{
@@ -916,9 +917,7 @@ text-transform: capitalize;
     cursor: pointer;
     transition: var(--transition);
 }
-.job .Apply form input:last-of-type:hover{
-    transform: scale(1.01);
-}
+
 @media (max-width:768px){
     header ul li .active{
         color: #fff !important;
