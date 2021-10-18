@@ -182,3 +182,13 @@ for(i = 0; i<ourPartners.length; i++){
         ourPartners[i].setAttribute("alt", "Partners")
     }
 }
+//specilization 
+document.querySelector('.specilization button').addEventListener('click', ()=>{
+  if(!document.querySelector('.specilization .box').classList.contains('active')){
+    document.querySelector('.specilization .box').classList.add('active');
+    document.querySelector('.specilization button').textContent = "اخفاء";
+  }else{
+    document.querySelector('.specilization .box').classList.remove('active');
+    document.querySelector('.specilization button').textContent = "عرض الكل";
+  }
+})

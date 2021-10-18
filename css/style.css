@@ -474,19 +474,32 @@ a[type = "phone"]{
     color: var(--whiteColor);
 }
 .specilization .box{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x:scroll;
+}
+.specilization .box.active{
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.specilization .box.active .content{
+    flex-basis: 25%;
+    min-width: 25%;
+    margin: 5px !important;
+    min-width: unset !important;
 }
 .specilization .box .content{
-transition: var(--transition);
+    transition: var(--transition);
+    min-width: 320px;
+    height: 250px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
-
 .specilization .box .content img{
     width: 100%;
     height: 100%;
 }
-
 .modal{
     position: fixed;
     top: 0;
@@ -520,6 +533,12 @@ color: #777;
         margin: 50% auto;
         width : 100%;
     }
+    .specilization .box .content{
+        width: 100%;
+    }
+    .specilization .box.active .content{
+        flex-basis: 100%;
+    }
 }
 
 @keyframes zoom{
@@ -530,16 +549,6 @@ color: #777;
         transform: scale(1);
     }
 }
-/*.specilization .box .content .text{
-    text-align: center;
-    color: var(--whiteColor);
-    position: relative;
-    padding: 35px 25px;
-}
-.specilization .box .content .text h3{
-    margin-bottom: 20px;
-    text-transform: capitalize;
-}*/
 .specilization ul{
     display: flex;
     justify-content: center;
@@ -557,6 +566,15 @@ color: #777;
 }
 .specilization .box .content .text p{
     line-height: 1.5;
+}
+.specilization button{
+    display: block;
+    margin: 50px auto 0;
+    padding: 10px 15px;
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;
+    font-weight: bold;
 }
 @media(max-width:280px){
     .specilization ul li{

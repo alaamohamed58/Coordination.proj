@@ -3,7 +3,7 @@
   background-color: #555;
 }
 ::-webkit-scrollbar-thumb{
-  background-color: #222;
+  background-color: var(--main-color);
   border-radius: 5px;
 }
 /* HEADER */
